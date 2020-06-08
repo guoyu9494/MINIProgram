@@ -1,0 +1,12 @@
+<view class="indexContainer">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <text class="userName"> Hello {{userInfo.nickName}}</text>
+  <text class="userName">{{userInfo.city}}</text>
+  <text class="userName">{{userInfo.country}}</text>
+  <view class="goStudy">
+    <button open-type="getUserInfo" style='display:{{isShow?"block":"none"}}'  bindgetuserinfo="userInfo"> Welcome</button>
+  </view>
+  <view catchtap="handleChild">
+    <text class="txt" style='display:{{show?"block":"none"}}'>欢迎开启小程序之旅！</text>
+  </view>
+</view>
