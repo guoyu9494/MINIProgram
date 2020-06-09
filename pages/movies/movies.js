@@ -2,6 +2,7 @@
 const MOVIE_URL ='http://t.yushu.im/v2/movie/top250'
 let appDatas = getApp()
 
+
 Page({
 
   /**
@@ -18,13 +19,13 @@ Page({
     wx.request({
       url: MOVIE_URL,
       success:(data)=>{
-        console.log(data)
        this.setData({
          moviesArr:data.data.subjects
        })
        appDatas.data.moviesArr=data.data.subjects
       }
     })
+    
   },
 
   /**
